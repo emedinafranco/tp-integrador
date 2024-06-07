@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la Imagen - Juego 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="game1" class="game-container">
+        <div class="container">
+            <div class="image-container">
+                <img id="imagen" src="" alt="Imagen a adivinar">
+            </div>
+            <div class="options-container">
+                <div class="opcion" onclick="verificarRespuesta(0)">
+                    <label id="label1"></label>
+                </div>
+                <div class="opcion" onclick="verificarRespuesta(1)">
+                    <label id="label2"></label>
+                </div>
+                <div class="opcion" onclick="verificarRespuesta(2)">
+                    <label id="label3"></label>
+                </div>
+                <div class="opcion" onclick="verificarRespuesta(3)">
+                    <label id="label4"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
