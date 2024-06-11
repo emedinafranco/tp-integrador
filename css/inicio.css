@@ -1,0 +1,22 @@
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uade{
+  width: 500px;
+}
+
+.info{
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+ol{
+  list-style-type: inherit;
+}
+
+.info li {
+  margin-bottom: 20px;
+}
