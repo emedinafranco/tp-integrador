@@ -1,35 +1,34 @@
 //SCRIPTS JUEGO 1 //
 const gameContainer = document.getElementById('game1');
-const imagenes = [
-    {
+const imagenes = [{
         url: "../images/img-transito/img-contramano.png",
         opciones: ["Contra Mano", "Fin de Camino Sinuoso", "Prohibido Adelantar", "No Estacionar"],
-        respuesta: 0 
+        respuesta: 0
     },
     {
         url: "../images/img-transito/img-estacionamientoexclusivo.png",
         opciones: ["Prohibido Estacionar", "Zona de Carga y Descarga", "Estacionamiento Reservado para Discapacitados", "Estacionamiento Exclusivo"],
-        respuesta: 3 
+        respuesta: 3
     },
     {
         url: "../images/img-transito/img-finautopista.png",
         opciones: ["Fin de Velocidad Máxima Permitida", "Fin de Zona Escolar", "Fin de Autopista", "Fin de Camino Sin Salida"],
-        respuesta: 2 
+        respuesta: 2
     },
     {
         url: "../images/img-transito/img-giroobligatorioizquierda.png",
         opciones: [" Prohibido Girar a la Izquierda", "Fin de Giro Obligatorio a la Izquierda", "Giro Obligatorio a la Izquierda", "Giro Obligatorio a la Derecha"],
-        respuesta: 2 
+        respuesta: 2
     },
     {
         url: "../images/img-transito/img-noavanzar.png",
         opciones: ["No Girar a la Izquierda", "No Avanzar", "Ceda el Paso", "contra mano"],
-        respuesta: 1 
+        respuesta: 1
     },
     {
         url: "../images/img-transito/img-noavanzarnidetenerse.png",
         opciones: ["Prohibido Girar en U", "Prohibido el Paso de Peatones", "Estacionamiento Permitido", "No Estacionar ni Detenerse"],
-        respuesta: 3 
+        respuesta: 3
     },
 ];
 

@@ -4,25 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/logo-tp.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/inicio.css">
     <title>Escuela vial</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1><img class="logo" src="./images/logo-tp.png" alt=""></h1>
-            <ul>
-                <li>Inicio</li>
-                <li><a href="./pages/integrantes.html">Integrantes</a></li>
-                <li><a href="./pages/avances.html">Avances</a></li>
-                <li><a href="./pages/juegos.html">Juegos</a></li>
-            </ul>
+    <header id="header" class="header">
+
+        <nav class="nav nav-container">
+            <a href="./index.html" class="nav_logo"><img class="logo" src="../images/logo-tp.png" alt=""></a>
+
+            <div class="nav_menu" id="nav_menu">
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="./index.html" class="nav_link">
+                            <i class="ri-arrow-right-line"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="./pages/integrantes.html" class="nav_link">
+                            <i class="ri-arrow-right-line"></i>
+                            <span>Integrantes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="./pages/avances.html" class="nav_link">
+                            <i class="ri-arrow-right-line"></i>
+                            <span>Avances</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="./pages/juegos.html" class="nav_link">
+                            <i class="ri-arrow-right-line"></i>
+                            <span>Juegos</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- close button -->
+                <div class="nav_close" id="nav_close">
+                    <i class="ri-close-line"></i>
+                </div>
+
+
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+
         </nav>
+
     </header>
+
 
     <main>
         <div class="info-container">
@@ -58,6 +104,9 @@
             <small class="signature">&copy Proyecto universitario para UADE 2024</small>
         </div>
     </footer>
+
+
+    <script src="./scripts/header.js"></script>
 
 </body>
 

@@ -10,9 +10,7 @@
   --font-main: "Montserrat", sans-serif;
 }
 
-main {
-  background-color: var(--bg-color);
-}
+
 
 .info-container {
   display: flex;
@@ -48,5 +46,3 @@ main {
 .uade-logo {
   height: 15rem;
 }
-
-
