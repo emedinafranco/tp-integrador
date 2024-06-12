@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo-tp.png" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Juego de Verdad y Respuestas - Señales de Tránsito</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1><img class="logo" src="../images/logo-tp.png" alt=""></h1>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./integrantes.html">Integrantes</a></li>
+                <li><a href="./avances.html">Avances</a></li>
+                <li><a href="./juegos.html">Juegos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div id="start-screen">
+            <h1>Verdadero o Falso</h1>
+            <p>¿Cuánto sabes sobre señales y normas de tránsito?</p>
+            <button id="start-button" class="button">Comenzar</button>
+        </div>
+
+        <!-- style="display: none;" -->
+
+        <div id="instructions-screen" style="display: none;">
+
+            <h2>Instrucciones</h2>
+            <p>
+                Bienvenido al juego de Verdadero o Falso sobre Señales de Tránsito y Normas de Tránsito.
+                Aquí tienes algunas instrucciones:
+            </p>
+            <ul>
+                <li>Se te presentarán una serie de afirmaciones.</li>
+                <li>Selecciona la opción correcta para ganar puntos.</li>
+                <li>Al final del juego, verás tu puntaje total.</li>
+            </ul>
+
+            <button id="play-button" class="button">Jugar</button>
+        </div>
+
+        <div id="quiz-screen" style="display: none;">
+            <div id="question-container">
+                <img src="" alt="" id="question-image" style="max-width: 100%; height: auto; display: none;">
+                <h2 id="question"></h2>
+                <div id="options"></div>
+                <div id="timer">Tiempo restante: <span id="time-remaining"></span>s</div>
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+
+            <button id="next-button" style="display:none;">Siguiente</button>
+
+        </div>
+
+
+        <div id="result-screen" style="display: none;">
+            <h2>Resultado</h2>
+            <p id="score"></p>
+            <button id="restart-button" class="button">Reintentar</button>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="../scripts/juego-emerson.js"></script>
+</body>
+
+</html>
