@@ -28,6 +28,13 @@ main {
     margin-top: calc(3.5rem + 5rem);
 }
 
+@media screen and (max-width:1150px) {
+    main {
+        background-color: var(--bg-color);
+        margin-top: calc(3.5rem + 2rem);
+    }
+}
+
 /*  CSS PARA JUEGO 1 */
 
 #game1 {

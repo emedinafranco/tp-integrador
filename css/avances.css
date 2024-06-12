@@ -1,0 +1,30 @@
+:root {
+
+    /** ---------- COLORES  -----------*/
+    --color-principal: #F5D21D;
+    --color-secundario: #F59E1D;
+    --bg-color: #FFF9EE;
+    --bg-dark: #282725;
+
+    /** ---------- TIPOGRAFIA  -----------*/
+    --font-main: "Montserrat", sans-serif;
+}
+
+.avances_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 2rem 2rem 2rem;
+    row-gap: 3rem;
+    text-align: center;
+    color: var(--bg-dark);
+}
+
+
+
+@media screen and (min-width:1150px) {
+    .avances_container {
+        margin: 0rem 20rem 2rem 20rem;
+        row-gap: 3rem;
+
+    }
+}
