@@ -1,0 +1,70 @@
+:root {
+    /** ---------- COLORES  -----------*/
+    --color-principal: #F5D21D;
+    --color-secundario: #F59E1D;
+    --bg-color: #FFF9EE;
+    --bg-dark: #282725;
+
+    /** ---------- TIPOGRAFIA  -----------*/
+    --font-main: "Montserrat", sans-serif;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.info-container {
+    margin-bottom: 3rem;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem auto;
+    column-gap: 2.5rem;
+}
+
+.students img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 100%;
+    transition: 300ms;
+}
+
+.students img:hover {
+    box-shadow: 0px 0px 4px 1px #000;
+
+}
+
+.student-button {
+    color: var(--bg-color);
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: var(--color-secundario);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.student-button:hover {
+    background-color: var(--color-principal);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.students h3 {
+    margin: 1rem 0;
+}
+
+.students p {
+    margin: 2rem 0;
+}

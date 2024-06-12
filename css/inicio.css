@@ -1,22 +1,52 @@
-main{
+:root {
+
+  /** ---------- COLORES  -----------*/
+  --color-principal: #F5D21D;
+  --color-secundario: #F59E1D;
+  --bg-color: #FFF9EE;
+  --bg-dark: #282725;
+
+  /** ---------- TIPOGRAFIA  -----------*/
+  --font-main: "Montserrat", sans-serif;
+}
+
+main {
+  background-color: var(--bg-color);
+}
+
+.info-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+
 }
 
-.uade{
-  width: 500px;
+.info-container h2 {
+  margin-bottom: 1.75rem;
 }
 
-.info{
-  width: 80%;
-  margin: 0 auto 20px auto;
+.info-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-ol{
-  list-style-type: inherit;
+.info-container li {
+  font-size: 1.25rem;
+  line-height: 3rem;
+  list-style: none;
 }
 
-.info li {
+
+.uade-logo-container {
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 }
+
+.uade-logo {
+  height: 15rem;
+}
+
+

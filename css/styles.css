@@ -221,3 +221,33 @@ header ul li a {
     cursor: not-allowed;
 }
 
+/* ----- FIN--ESTILOS--JUEGO EMERSON -------- */
+
+.footer {
+    background-color: var(--bg-dark);
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 1.75rem auto;
+}
+
+.footer-link {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--color-secundario);
+}
+
+.signature {
+    color: var(--bg-color);
+    font-style: italic;
+
+}
