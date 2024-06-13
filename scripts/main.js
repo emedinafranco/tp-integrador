@@ -106,7 +106,7 @@ function loadGame(game) {
             gameContainer.innerHTML = '<iframe src="../pages/juego-emerson.html" frameborder="0" width="100%" height="100%"></iframe>';
             break;
         case 'game3':
-            gameContainer.innerHTML = '<iframe src="game3.html" frameborder="0" width="100%" height="100%"></iframe>';
+            gameContainer.innerHTML = '<iframe src="../pages/juego-antoniow.html" frameborder="0" width="100%" height="100%"></iframe>';
             break;
         default:
             gameContainer.innerHTML = '<p>Selecciona un juego para empezar a jugar.</p>';

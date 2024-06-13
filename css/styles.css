@@ -112,7 +112,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 4rem;
+    padding-bottom: 10px;
 }
 
 footer ul li {
