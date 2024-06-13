@@ -1,0 +1,70 @@
+
+/*  CSS PARA JUEGO 1 */
+#game1 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#game1 h2 {
+    text-align: center;
+}
+
+#game1 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #eeeded;
+}
+
+#game1 .image-container {
+    flex: 1;
+    margin-left: 10%;
+}
+
+#game1 .options-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    background-color: #888686;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#game1 .opcion {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#game1 .opcion:hover {
+    background-color: #f0f0f0;
+}
+
+#game1-title {
+    align-items: center;
+}
+
+/* CSS PARA SWEETALERT 2 */
+
+.swal2-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.swal2-content {
+    font-size: 16px;
+}
+
+.swal2-confirm {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.swal2-confirm:hover {
+    background-color: #0056b3;
+}
