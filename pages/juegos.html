@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="../images/logo-tp.png" />
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/juegos.css">
     <title>Document</title>
 </head>
 
@@ -66,7 +67,15 @@
         </nav>
 
     </header>
-
+    <main>
+        <div id="buttons-container">
+            <button onclick="loadGame('game1')">Juego 1</button>
+            <button onclick="loadGame('game2')">Juego 2</button>
+            <button onclick="loadGame('game3')">Juego 3</button>
+        </div>
+        <div id="game-container">
+        </div>
+    </main>
 
 
     <footer class="footer">
@@ -82,6 +91,7 @@
     </footer>
 
     <script src="../scripts/header.js"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 
 </html>
