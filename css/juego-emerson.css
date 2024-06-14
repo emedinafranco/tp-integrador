@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    /** ---------- COLORES  -----------*/
+    --color-principal: #F5D21D;
+    --color-secundario: #F59E1D;
+    --bg-color: #FFF9EE;
+    --bg-dark: #282725;
+
+    /** ---------- TIPOGRAFIA  -----------*/
+    --font-main: "Montserrat", sans-serif;
+}
+
 /* ESTILOS----JUEGO EMERSON -------- */
 
 .game-container {
@@ -7,7 +21,16 @@
     background-color: rgb(228, 228, 226);
     margin: 1.6rem;
     min-height: 24rem;
+    font-family: Montserrat;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2)
 }
+
+@media screen and (min-width:1150px) {
+    .game-container {
+        margin: 1rem 25rem;
+    }
+}
+
 
 .button {
     padding: 10px 20px;

@@ -1,14 +1,13 @@
-
 // SCRIPTS PAGINA JUEGOS
 
 function loadGame(game) {
     const gameContainer = document.getElementById('game-container');
-    
+
     // Limpia el contenido actual del contenedor de juegos
     gameContainer.innerHTML = '';
 
     // Carga el juego correspondiente
-    switch(game) {
+    switch (game) {
         case 'game1':
             gameContainer.innerHTML = '<iframe src="../pages/juego-albornoz.html" frameborder="0" width="100%" height="100%"></iframe>';
             break;

@@ -10,19 +10,21 @@
     --font-main: "Montserrat", sans-serif;
 }
 
+.h1-tittle {
+    text-align: center;
+}
 
 .avances_container {
     margin: 0rem 2rem 2rem 2rem;
     color: var(--bg-dark);
 }
 
-.avances_container.grid {
+.grid {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: start;
 }
-
 
 .avances_item {
     background: #fff;
@@ -57,7 +59,7 @@
     }
 
     .avances_container {
-        margin: 5rem 15rem;
+        margin: 2rem 15rem;
     }
 
 }
