@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const imagenAuto = new Image();
   imagenAuto.src = '../images/juego-antoniow/car.png';
   const imagenCasa = new Image();
-  imagenCasa.src = '../images/juego-antoniow/chouse.png';
+  imagenCasa.src = '../images/juego-antoniow/house.png';
 
   const auto = {
       x: canvas.width / 2,
