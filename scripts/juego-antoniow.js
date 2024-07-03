@@ -20,11 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const obstaculosIniciales = [
+      { x: 20, y: 20, width: 50, height: 50 },
+      { x: 220, y: 20, width: 50, height: 50 },
+      { x: 420, y: 20, width: 50, height: 50 },
+      { x: 620, y: 20, width: 50, height: 50 },
+      { x: 20, y: 220, width: 50, height: 50 },
       { x: 220, y: 220, width: 50, height: 50 },
+      { x: 420, y: 220, width: 50, height: 50 },
       { x: 620, y: 220, width: 50, height: 50 },
+      { x: 20, y: 420, width: 50, height: 50 },
       { x: 220, y: 420, width: 50, height: 50 },
-      { x: 620, y: 420, width: 50, height: 50 },
-      { x: 420, y: 420, width: 50, height: 50 }
+      { x: 420, y: 420, width: 50, height: 50 },
+      { x: 620, y: 420, width: 50, height: 50 }
   ];
 
   let obstaculos = [...obstaculosIniciales];
@@ -138,9 +145,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function mostrarGameOver() {
-      ctx.fillStyle = "black";
+      ctx.fillStyle = "white";
       ctx.font = "40px Arial";
-      ctx.fillText("¡Perdiste!", canvas.width / 2 - 100, canvas.height / 2);
+      ctx.fillText("¡CHOCASTE!", canvas.width / 2 - 100, canvas.height / 2);
       ctx.font = "20px Arial";
       ctx.fillText("Presiona 'R' para reiniciar", canvas.width / 2 - 110, canvas.height / 2 + 40);
   }
@@ -160,6 +167,12 @@ document.addEventListener("DOMContentLoaded", function () {
       dibujarFondo();
       if (detectarColisiones()) {
           juegoTerminado = true;
+          Swal.fire({
+            icon: 'error',
+            title: '¡Accidente!',
+            text: 'Chocaste contra la vivienda de una familia por haber ido muy rapido. Es importante que tengas encuenta y respetes las velocidades maximas para evitar accidentes. Comprendes las consecuencias de no acerlo ?',
+            confirmButtonText: 'Si'
+          });
           mostrarGameOver();
       } else {
           actualizarPosicion();
