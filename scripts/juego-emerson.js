@@ -16,9 +16,9 @@ const scoreElement = document.getElementById('score');
 const questionImage = document.getElementById('question-image');
 const timerElement = document.getElementById('timer');
 const timeRemainingElement = document.getElementById('time-remaining');
+const positionElement = document.getElementById('position');
 
-const questions = [
-    {
+const questions = [{
         question: "Señal para detenerse completamente",
         image: "../images/señales/pare.jpg",
         options: ["Verdadero", "Falso"],
@@ -60,6 +60,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let timer;
 const timeLimit = 5;
+let attempts = 0;
 
 startButton.addEventListener('click', () => showInstructions());
 playButton.addEventListener('click', () => startGame());
@@ -71,15 +72,22 @@ const showInstructions = () => {
 }
 
 const startGame = () => {
-    instructionsScreen.style.display = 'none';
-    quizScreen.style.display = 'block';
-    showQuestion();
+
+    if (attempts <= 1) {
+        instructionsScreen.style.display = 'none';
+        quizScreen.style.display = 'block';
+        showQuestion();
+    } else {
+        alert('YA NO TIENES MAS INTENTOS')
+    }
 }
 
 const showQuestion = () => {
     resetState();
     const question = questions[currentQuestionIndex];
     questionElement.textContent = question.question;
+    // console.log(questions[currentQuestionIndex])
+    positionElement.innerHTML = `Pregunta: ${currentQuestionIndex + 1} / ${questions.length}`;
     if (question.image) {
         questionImage.src = question.image;
         questionImage.style.display = 'block';
@@ -152,9 +160,23 @@ const showNextQuestion = () => {
 }
 
 const showResult = () => {
+
+    let content;
+
+    if (score >= 4) {
+        content = `<h3 class='aprobado'>APROBASTE</h3>
+    <p>Tu puntaje es de: <strong> ${score} de ${questions.length}</strong> </p>`
+    } else {
+        content = `<h3 class='desaprobado'>DESAPROBADO</h3>
+    <p>Tu puntaje es de: <strong>${score} de ${questions.length}</strong> </p>
+    <p>Vuelve a intentalo una vez más!</p>`
+    }
+
+
     quizScreen.style.display = 'none';
     resultScreen.style.display = 'block';
-    scoreElement.textContent = `Tu puntaje es de: ${score} de ${questions.length}`;
+    scoreElement.innerHTML = content;
+    attempts++;
 }
 
 const restartGame = () => {
